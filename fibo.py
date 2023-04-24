@@ -9,9 +9,9 @@ def recursive_nth_fibo(n):
 
 
 def main():
-    nth = input("Zadej kolikátý člen FP chceš vypočítat:")
-    return print(recursive_nth_fibo(nth))
-
+    nth = int(input("Zadej kolikátý člen FP chceš vypočítat:"))
+    seq = [recursive_nth_fibo(num) for num in range(nth+1)]
+    print(seq)
 
 if __name__ == "__main__":
     main()
